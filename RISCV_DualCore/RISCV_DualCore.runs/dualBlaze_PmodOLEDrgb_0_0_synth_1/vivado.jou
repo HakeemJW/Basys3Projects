@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 29 01:04:26 2022
+# Process ID: 70696
+# Current directory: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/dualBlaze_PmodOLEDrgb_0_0_synth_1
+# Command line: vivado.exe -log dualBlaze_PmodOLEDrgb_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dualBlaze_PmodOLEDrgb_0_0.tcl
+# Log file: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/dualBlaze_PmodOLEDrgb_0_0_synth_1/dualBlaze_PmodOLEDrgb_0_0.vds
+# Journal file: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/dualBlaze_PmodOLEDrgb_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-M3780A7, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source dualBlaze_PmodOLEDrgb_0_0.tcl -notrace

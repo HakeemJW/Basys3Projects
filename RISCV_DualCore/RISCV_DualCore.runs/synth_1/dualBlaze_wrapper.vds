@@ -1,0 +1,566 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 29 01:07:52 2022
+# Process ID: 41472
+# Current directory: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1
+# Command line: vivado.exe -log dualBlaze_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dualBlaze_wrapper.tcl
+# Log file: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/dualBlaze_wrapper.vds
+# Journal file: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1\vivado.jou
+# Running On: DESKTOP-M3780A7, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 24, Host memory: 34265 MB
+#-----------------------------------------------------------
+source dualBlaze_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Hakeem/Desktop/Basys3_Projects/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top dualBlaze_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 69860
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1636.898 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_wrapper' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:39]
+INFO: [Synth 8-3491] module 'dualBlaze' declared at 'c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:4526' bound to instance 'dualBlaze_i' of component 'dualBlaze' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:4587]
+INFO: [Synth 8-3491] module 'dualBlaze_PmodNAV_0_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_PmodNAV_0_0_stub.vhdl:5' bound to instance 'PmodNAV_0' of component 'dualBlaze_PmodNAV_0_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5676]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_PmodNAV_0_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_PmodNAV_0_0_stub.vhdl:74]
+INFO: [Synth 8-3491] module 'dualBlaze_PmodOLEDrgb_0_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_PmodOLEDrgb_0_0_stub.vhdl:5' bound to instance 'PmodOLEDrgb_0' of component 'dualBlaze_PmodOLEDrgb_0_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5742]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_PmodOLEDrgb_0_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_PmodOLEDrgb_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'dualBlaze_axi_bram_ctrl_0_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'dualBlaze_axi_bram_ctrl_0_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5811]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_axi_bram_ctrl_0_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'dualBlaze_axi_bram_ctrl_0_bram_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_bram_ctrl_0_bram_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram' of component 'dualBlaze_axi_bram_ctrl_0_bram_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5854]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_axi_bram_ctrl_0_bram_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_bram_ctrl_0_bram_1_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'dualBlaze_axi_bram_ctrl_1_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_bram_ctrl_1_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_1' of component 'dualBlaze_axi_bram_ctrl_1_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5875]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_axi_bram_ctrl_1_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_bram_ctrl_1_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'dualBlaze_axi_uartlite_0_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'dualBlaze_axi_uartlite_0_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5918]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_axi_uartlite_0_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'dualBlaze_clk_wiz_0_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'dualBlaze_clk_wiz_0_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5943]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_clk_wiz_0_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_clk_wiz_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'dualBlaze_mdm_1_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'dualBlaze_mdm_1_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5952]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_mdm_1_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_mdm_1_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'dualBlaze_microblaze_0_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'dualBlaze_microblaze_0_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:5974]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_microblaze_0_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'dualBlaze_microblaze_0_axi_intc_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'dualBlaze_microblaze_0_axi_intc_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:6060]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_microblaze_0_axi_intc_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_microblaze_0_axi_periph_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2806]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1LKNLAI' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1LKNLAI' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_6TVC2A' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:263]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_6TVC2A' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1G3UH6J' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:576]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1G3UH6J' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:576]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_U0EALF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:976]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_U0EALF' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:976]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_AKI6P4' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1093]
+INFO: [Synth 8-3491] module 'dualBlaze_auto_pc_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'dualBlaze_auto_pc_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1263]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_auto_pc_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_AKI6P4' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1093]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_O8C252' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2490]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_O8C252' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2490]
+INFO: [Synth 8-3491] module 'dualBlaze_xbar_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'dualBlaze_xbar_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:3486]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_xbar_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'dualBlaze_microblaze_0_axi_periph_0' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2806]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1GQSO82' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1353]
+INFO: [Synth 8-3491] module 'dualBlaze_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'dualBlaze_dlmb_bram_if_cntlr_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1567]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_dlmb_bram_if_cntlr_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'dualBlaze_dlmb_v10_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'dualBlaze_dlmb_v10_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1621]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_dlmb_v10_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'dualBlaze_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'dualBlaze_ilmb_bram_if_cntlr_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1649]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_ilmb_bram_if_cntlr_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'dualBlaze_ilmb_v10_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'dualBlaze_ilmb_v10_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1703]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_ilmb_v10_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'dualBlaze_lmb_bram_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'dualBlaze_lmb_bram_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1731]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_lmb_bram_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1GQSO82' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1353]
+INFO: [Synth 8-3491] module 'dualBlaze_microblaze_0_xlconcat_0' declared at 'c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_xlconcat_0/synth/dualBlaze_microblaze_0_xlconcat_0.v:53' bound to instance 'microblaze_0_xlconcat' of component 'dualBlaze_microblaze_0_xlconcat_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:6252]
+INFO: [Synth 8-6157] synthesizing module 'dualBlaze_microblaze_0_xlconcat_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_xlconcat_0/synth/dualBlaze_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'dualBlaze_microblaze_0_xlconcat_0' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_xlconcat_0/synth/dualBlaze_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-3491] module 'dualBlaze_microblaze_1_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_microblaze_1_0_stub.vhdl:5' bound to instance 'microblaze_1' of component 'dualBlaze_microblaze_1_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:6258]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_microblaze_1_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_microblaze_1_0_stub.vhdl:137]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_microblaze_1_axi_periph_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:3728]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1TH8XX8' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1TH8XX8' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_GOJGMC' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:370]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_GOJGMC' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1872YX9' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:471]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1872YX9' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:471]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_K5V8YD' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:699]
+INFO: [Synth 8-3491] module 'dualBlaze_auto_pc_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'dualBlaze_auto_pc_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:869]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_auto_pc_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_auto_pc_1_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_K5V8YD' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:699]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_W52UOW' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2601]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_W52UOW' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2601]
+INFO: [Synth 8-3491] module 'dualBlaze_xbar_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'dualBlaze_xbar_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:4392]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_xbar_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_xbar_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'dualBlaze_microblaze_1_axi_periph_0' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:3728]
+INFO: [Synth 8-638] synthesizing module 'microblaze_1_local_memory_imp_ADSN7A' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1911]
+INFO: [Synth 8-3491] module 'dualBlaze_dlmb_bram_if_cntlr_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'dualBlaze_dlmb_bram_if_cntlr_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2125]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_dlmb_bram_if_cntlr_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'dualBlaze_dlmb_v10_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'dualBlaze_dlmb_v10_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2179]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_dlmb_v10_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'dualBlaze_ilmb_bram_if_cntlr_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'dualBlaze_ilmb_bram_if_cntlr_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2207]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_ilmb_bram_if_cntlr_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'dualBlaze_ilmb_v10_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'dualBlaze_ilmb_v10_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2261]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_ilmb_v10_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'dualBlaze_lmb_bram_1' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'dualBlaze_lmb_bram_1' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:2289]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_lmb_bram_1' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_1_local_memory_imp_ADSN7A' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:1911]
+INFO: [Synth 8-3491] module 'dualBlaze_rst_clk_wiz_0_100M_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'dualBlaze_rst_clk_wiz_0_100M_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:6527]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_rst_clk_wiz_0_100M_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'dualBlaze_rst_clk_wiz_0_50M_0' declared at 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_rst_clk_wiz_0_50M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_50M' of component 'dualBlaze_rst_clk_wiz_0_50M_0' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:6540]
+INFO: [Synth 8-638] synthesizing module 'dualBlaze_rst_clk_wiz_0_50M_0' [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/.Xil/Vivado-41472-DESKTOP-M3780A7/realtime/dualBlaze_rst_clk_wiz_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'dualBlaze' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/synth/dualBlaze.vhd:4587]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin10_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:208]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin1_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:215]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin2_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:222]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin3_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:229]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin4_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:236]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin7_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:243]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin8_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:250]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jb_pin9_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:257]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin10_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:264]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin1_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:271]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin2_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:278]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin3_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:285]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin4_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:292]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin7_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:299]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin8_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:306]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin9_iobuf' of component 'IOBUF' [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:313]
+INFO: [Synth 8-256] done synthesizing module 'dualBlaze_wrapper' (0#1) [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/hdl/dualBlaze_wrapper.vhd:39]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_W52UOW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_W52UOW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_W52UOW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_W52UOW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[15] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[14] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[13] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[15] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[14] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[13] in module m03_couplers_imp_K5V8YD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1872YX9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1872YX9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1872YX9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1872YX9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_GOJGMC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_GOJGMC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_GOJGMC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_GOJGMC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1TH8XX8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1TH8XX8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1TH8XX8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1TH8XX8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bresp[1] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[31] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[30] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[29] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[28] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[27] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[26] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[25] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[24] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[23] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[22] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[21] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[20] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[19] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[18] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[17] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[16] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[15] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[14] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[13] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[12] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[11] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[10] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[9] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[8] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[7] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[6] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[5] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[4] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[3] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[2] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rdata[1] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rresp[1] in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module dualBlaze_microblaze_1_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1737.074 ; gain = 100.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1754.996 ; gain = 118.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1754.996 ; gain = 118.098
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1767.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0_in_context.xdc] for cell 'dualBlaze_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0_in_context.xdc] for cell 'dualBlaze_i/clk_wiz_0'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_0/dualBlaze_microblaze_0_0/dualBlaze_microblaze_0_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_0/dualBlaze_microblaze_0_0/dualBlaze_microblaze_0_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_v10_0/dualBlaze_dlmb_v10_0/dualBlaze_dlmb_v10_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_v10_0/dualBlaze_dlmb_v10_0/dualBlaze_dlmb_v10_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_v10_0/dualBlaze_ilmb_v10_0/dualBlaze_dlmb_v10_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_v10_0/dualBlaze_ilmb_v10_0/dualBlaze_dlmb_v10_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_bram_if_cntlr_0/dualBlaze_dlmb_bram_if_cntlr_0/dualBlaze_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_bram_if_cntlr_0/dualBlaze_dlmb_bram_if_cntlr_0/dualBlaze_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_bram_if_cntlr_0/dualBlaze_ilmb_bram_if_cntlr_0/dualBlaze_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_bram_if_cntlr_0/dualBlaze_ilmb_bram_if_cntlr_0/dualBlaze_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_lmb_bram_0/dualBlaze_lmb_bram_0/dualBlaze_lmb_bram_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_lmb_bram_0/dualBlaze_lmb_bram_0/dualBlaze_lmb_bram_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_xbar_0/dualBlaze_xbar_0/dualBlaze_xbar_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_xbar_0/dualBlaze_xbar_0/dualBlaze_xbar_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_mdm_1_0/dualBlaze_mdm_1_0/dualBlaze_mdm_1_0_in_context.xdc] for cell 'dualBlaze_i/mdm_1'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_mdm_1_0/dualBlaze_mdm_1_0/dualBlaze_mdm_1_0_in_context.xdc] for cell 'dualBlaze_i/mdm_1'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_rst_clk_wiz_0_100M_0/dualBlaze_rst_clk_wiz_0_100M_0/dualBlaze_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'dualBlaze_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_rst_clk_wiz_0_100M_0/dualBlaze_rst_clk_wiz_0_100M_0/dualBlaze_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'dualBlaze_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodOLEDrgb_0_0/dualBlaze_PmodOLEDrgb_0_0/dualBlaze_PmodOLEDrgb_0_0_in_context.xdc] for cell 'dualBlaze_i/PmodOLEDrgb_0'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodOLEDrgb_0_0/dualBlaze_PmodOLEDrgb_0_0/dualBlaze_PmodOLEDrgb_0_0_in_context.xdc] for cell 'dualBlaze_i/PmodOLEDrgb_0'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_uartlite_0_0/dualBlaze_axi_uartlite_0_0/dualBlaze_axi_uartlite_0_0_in_context.xdc] for cell 'dualBlaze_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_uartlite_0_0/dualBlaze_axi_uartlite_0_0/dualBlaze_axi_uartlite_0_0_in_context.xdc] for cell 'dualBlaze_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_1_0/dualBlaze_microblaze_1_0/dualBlaze_microblaze_1_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_1'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_1_0/dualBlaze_microblaze_1_0/dualBlaze_microblaze_1_0_in_context.xdc] for cell 'dualBlaze_i/microblaze_1'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_v10_1/dualBlaze_dlmb_v10_1/dualBlaze_dlmb_v10_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_v10_1/dualBlaze_dlmb_v10_1/dualBlaze_dlmb_v10_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_v10_1/dualBlaze_ilmb_v10_1/dualBlaze_dlmb_v10_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_v10_1/dualBlaze_ilmb_v10_1/dualBlaze_dlmb_v10_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_bram_if_cntlr_1/dualBlaze_dlmb_bram_if_cntlr_1/dualBlaze_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_dlmb_bram_if_cntlr_1/dualBlaze_dlmb_bram_if_cntlr_1/dualBlaze_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_bram_if_cntlr_1/dualBlaze_ilmb_bram_if_cntlr_1/dualBlaze_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_bram_if_cntlr_1/dualBlaze_ilmb_bram_if_cntlr_1/dualBlaze_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_lmb_bram_1/dualBlaze_lmb_bram_1/dualBlaze_lmb_bram_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_lmb_bram_1/dualBlaze_lmb_bram_1/dualBlaze_lmb_bram_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_rst_clk_wiz_0_50M_0/dualBlaze_rst_clk_wiz_0_50M_0/dualBlaze_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'dualBlaze_i/rst_clk_wiz_0_50M'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_rst_clk_wiz_0_50M_0/dualBlaze_rst_clk_wiz_0_50M_0/dualBlaze_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'dualBlaze_i/rst_clk_wiz_0_50M'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/dualBlaze_PmodNAV_0_0/dualBlaze_PmodNAV_0_0_in_context.xdc] for cell 'dualBlaze_i/PmodNAV_0'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/dualBlaze_PmodNAV_0_0/dualBlaze_PmodNAV_0_0_in_context.xdc] for cell 'dualBlaze_i/PmodNAV_0'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_xbar_1/dualBlaze_xbar_1/dualBlaze_xbar_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_xbar_1/dualBlaze_xbar_1/dualBlaze_xbar_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_axi_periph/xbar'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1_in_context.xdc] for cell 'dualBlaze_i/microblaze_1_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_0/dualBlaze_axi_bram_ctrl_0_0/dualBlaze_axi_bram_ctrl_0_0_in_context.xdc] for cell 'dualBlaze_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_0/dualBlaze_axi_bram_ctrl_0_0/dualBlaze_axi_bram_ctrl_0_0_in_context.xdc] for cell 'dualBlaze_i/axi_bram_ctrl_0'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_bram_1/dualBlaze_axi_bram_ctrl_0_bram_1/dualBlaze_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'dualBlaze_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_bram_1/dualBlaze_axi_bram_ctrl_0_bram_1/dualBlaze_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'dualBlaze_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_1_0/dualBlaze_axi_bram_ctrl_1_0/dualBlaze_axi_bram_ctrl_1_0_in_context.xdc] for cell 'dualBlaze_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_1_0/dualBlaze_axi_bram_ctrl_1_0/dualBlaze_axi_bram_ctrl_1_0_in_context.xdc] for cell 'dualBlaze_i/axi_bram_ctrl_1'
+Parsing XDC File [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1819.227 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'dualBlaze_i/PmodNAV_0' at clock pin 's_axi_aclk' is different from the actual clock period '2.222', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dualBlaze_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dualBlaze_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dualBlaze_i/microblaze_1_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '2.222', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/PmodOLEDrgb_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/rst_clk_wiz_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/PmodNAV_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/microblaze_1_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dualBlaze_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |dualBlaze_xbar_0                  |         1|
+|2     |dualBlaze_auto_pc_0               |         1|
+|3     |dualBlaze_xbar_1                  |         1|
+|4     |dualBlaze_auto_pc_1               |         1|
+|5     |dualBlaze_PmodNAV_0_0             |         1|
+|6     |dualBlaze_PmodOLEDrgb_0_0         |         1|
+|7     |dualBlaze_axi_bram_ctrl_0_0       |         1|
+|8     |dualBlaze_axi_bram_ctrl_0_bram_1  |         1|
+|9     |dualBlaze_axi_bram_ctrl_1_0       |         1|
+|10    |dualBlaze_axi_uartlite_0_0        |         1|
+|11    |dualBlaze_clk_wiz_0_0             |         1|
+|12    |dualBlaze_mdm_1_0                 |         1|
+|13    |dualBlaze_microblaze_0_0          |         1|
+|14    |dualBlaze_microblaze_0_axi_intc_0 |         1|
+|15    |dualBlaze_microblaze_1_0          |         1|
+|16    |dualBlaze_rst_clk_wiz_0_100M_0    |         1|
+|17    |dualBlaze_rst_clk_wiz_0_50M_0     |         1|
+|18    |dualBlaze_dlmb_bram_if_cntlr_0    |         1|
+|19    |dualBlaze_dlmb_v10_0              |         1|
+|20    |dualBlaze_ilmb_bram_if_cntlr_0    |         1|
+|21    |dualBlaze_ilmb_v10_0              |         1|
+|22    |dualBlaze_lmb_bram_0              |         1|
+|23    |dualBlaze_dlmb_bram_if_cntlr_1    |         1|
+|24    |dualBlaze_dlmb_v10_1              |         1|
+|25    |dualBlaze_ilmb_bram_if_cntlr_1    |         1|
+|26    |dualBlaze_ilmb_v10_1              |         1|
+|27    |dualBlaze_lmb_bram_1              |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |dualBlaze_PmodNAV_0_0_bbox             |     1|
+|2     |dualBlaze_PmodOLEDrgb_0_0_bbox         |     1|
+|3     |dualBlaze_auto_pc_0_bbox               |     1|
+|4     |dualBlaze_auto_pc_1_bbox               |     1|
+|5     |dualBlaze_axi_bram_ctrl_0_0_bbox       |     1|
+|6     |dualBlaze_axi_bram_ctrl_0_bram_1_bbox  |     1|
+|7     |dualBlaze_axi_bram_ctrl_1_0_bbox       |     1|
+|8     |dualBlaze_axi_uartlite_0_0_bbox        |     1|
+|9     |dualBlaze_clk_wiz_0_0_bbox             |     1|
+|10    |dualBlaze_dlmb_bram_if_cntlr_0_bbox    |     1|
+|11    |dualBlaze_dlmb_bram_if_cntlr_1_bbox    |     1|
+|12    |dualBlaze_dlmb_v10_0_bbox              |     1|
+|13    |dualBlaze_dlmb_v10_1_bbox              |     1|
+|14    |dualBlaze_ilmb_bram_if_cntlr_0_bbox    |     1|
+|15    |dualBlaze_ilmb_bram_if_cntlr_1_bbox    |     1|
+|16    |dualBlaze_ilmb_v10_0_bbox              |     1|
+|17    |dualBlaze_ilmb_v10_1_bbox              |     1|
+|18    |dualBlaze_lmb_bram_0_bbox              |     1|
+|19    |dualBlaze_lmb_bram_1_bbox              |     1|
+|20    |dualBlaze_mdm_1_0_bbox                 |     1|
+|21    |dualBlaze_microblaze_0_0_bbox          |     1|
+|22    |dualBlaze_microblaze_0_axi_intc_0_bbox |     1|
+|23    |dualBlaze_microblaze_1_0_bbox          |     1|
+|24    |dualBlaze_rst_clk_wiz_0_100M_0_bbox    |     1|
+|25    |dualBlaze_rst_clk_wiz_0_50M_0_bbox     |     1|
+|26    |dualBlaze_xbar_0_bbox                  |     1|
+|27    |dualBlaze_xbar_1_bbox                  |     1|
+|28    |IBUF                                   |     2|
+|29    |IOBUF                                  |    16|
+|30    |OBUF                                   |     1|
++------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1819.227 ; gain = 182.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1819.227 ; gain = 118.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1819.227 ; gain = 182.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1819.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Synth Design complete, checksum: a7752a92
+INFO: [Common 17-83] Releasing license: Synthesis
+132 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1819.227 ; gain = 182.328
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/dualBlaze_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dualBlaze_wrapper_utilization_synth.rpt -pb dualBlaze_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 29 01:08:28 2022...
