@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 6
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -103,7 +104,6 @@ set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Deskto
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_ilmb_bram_if_cntlr_0/dualBlaze_ilmb_bram_if_cntlr_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_lmb_bram_0/dualBlaze_lmb_bram_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_xbar_0/dualBlaze_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_axi_intc_0/dualBlaze_microblaze_0_axi_intc_0_ooc.xdc]
@@ -148,10 +148,11 @@ set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Deskto
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_axi_quad_spi_0_0/PmodNAV_axi_quad_spi_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_axi_quad_spi_0_0/PmodNAV_axi_quad_spi_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_xbar_1/dualBlaze_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_0/dualBlaze_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_bram_1/dualBlaze_axi_bram_ctrl_0_bram_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_1_0/dualBlaze_axi_bram_ctrl_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/dualBlaze_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_0/data/mb_bootloop_le.elf]
 set_property used_in_implementation false [get_files -all c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_1_0/data/mb_bootloop_le.elf]
@@ -168,6 +169,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.srcs/utils_1/imports/synth_1/dualBlaze_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

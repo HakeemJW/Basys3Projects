@@ -28,9 +28,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_l
 # IP: bd/dualBlaze/ip/dualBlaze_xbar_0/dualBlaze_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_xbar_0 || ORIG_REF_NAME==dualBlaze_xbar_0} -quiet] -quiet
 
-# IP: bd/dualBlaze/ip/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_auto_pc_0 || ORIG_REF_NAME==dualBlaze_auto_pc_0} -quiet] -quiet
-
 # IP: bd/dualBlaze/ip/dualBlaze_microblaze_0_axi_periph_0/dualBlaze_microblaze_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_microblaze_0_axi_periph_0 || ORIG_REF_NAME==dualBlaze_microblaze_0_axi_periph_0} -quiet] -quiet
 
@@ -79,9 +76,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_P
 # IP: bd/dualBlaze/ip/dualBlaze_xbar_1/dualBlaze_xbar_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_xbar_1 || ORIG_REF_NAME==dualBlaze_xbar_1} -quiet] -quiet
 
-# IP: bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_auto_pc_1 || ORIG_REF_NAME==dualBlaze_auto_pc_1} -quiet] -quiet
-
 # IP: bd/dualBlaze/ip/dualBlaze_microblaze_1_axi_periph_0/dualBlaze_microblaze_1_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_microblaze_1_axi_periph_0 || ORIG_REF_NAME==dualBlaze_microblaze_1_axi_periph_0} -quiet] -quiet
 
@@ -93,5 +87,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_a
 
 # IP: bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_1_0/dualBlaze_axi_bram_ctrl_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_axi_bram_ctrl_1_0 || ORIG_REF_NAME==dualBlaze_axi_bram_ctrl_1_0} -quiet] -quiet
+
+# IP: bd/dualBlaze/ip/dualBlaze_auto_pc_0/dualBlaze_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_auto_pc_0 || ORIG_REF_NAME==dualBlaze_auto_pc_0} -quiet] -quiet
+
+# IP: bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dualBlaze_auto_pc_1 || ORIG_REF_NAME==dualBlaze_auto_pc_1} -quiet] -quiet
 
 # XDC: c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/dualBlaze_ooc.xdc

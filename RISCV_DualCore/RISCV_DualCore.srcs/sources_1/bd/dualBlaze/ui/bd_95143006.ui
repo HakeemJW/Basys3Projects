@@ -23,11 +23,11 @@ preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 2140 -y 850 -defaultsOSRD
 preplace inst microblaze_1 -pg 1 -lvl 4 -x 1300 -y 900 -defaultsOSRD
 preplace inst microblaze_1_local_memory -pg 1 -lvl 5 -x 1760 -y 890 -defaultsOSRD
 preplace inst rst_clk_wiz_0_50M -pg 1 -lvl 3 -x 810 -y 1020 -defaultsOSRD
-preplace inst PmodNAV_0 -pg 1 -lvl 6 -x 2140 -y 210 -defaultsOSRD
 preplace inst microblaze_1_axi_periph -pg 1 -lvl 5 -x 1760 -y 200 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -x 2140 -y 710 -defaultsOSRD
 preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 7 -x 2430 -y 360 -defaultsOSRD
 preplace inst axi_bram_ctrl_1 -pg 1 -lvl 6 -x 2140 -y 370 -defaultsOSRD
+preplace inst PmodNAV_0 -pg 1 -lvl 6 -x 2140 -y 210 -defaultsOSRD
 preplace netloc sys_clock_1 1 0 1 NJ 810
 preplace netloc reset_1 1 0 3 20 710 200 1010 630J
 preplace netloc microblaze_0_intr 1 2 1 620J 760n

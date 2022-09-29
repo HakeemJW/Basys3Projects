@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Thu Sep 29 01:03:58 2022
+--Date        : Thu Sep 29 08:43:38 2022
 --Host        : DESKTOP-M3780A7 running 64-bit major release  (build 9200)
 --Command     : generate_target dualBlaze.bd
 --Design      : dualBlaze
@@ -329,97 +329,97 @@ entity m01_couplers_imp_GOJGMC is
     M_ACLK : in STD_LOGIC;
     M_ARESETN : in STD_LOGIC;
     M_AXI_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_arready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M_AXI_arvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_arready : in STD_LOGIC;
+    M_AXI_arvalid : out STD_LOGIC;
     M_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_awready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M_AXI_awvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    M_AXI_bready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_awready : in STD_LOGIC;
+    M_AXI_awvalid : out STD_LOGIC;
+    M_AXI_bready : out STD_LOGIC;
     M_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_bvalid : in STD_LOGIC;
     M_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_rready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_rready : out STD_LOGIC;
     M_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_rvalid : in STD_LOGIC;
     M_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_wready : in STD_LOGIC;
     M_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_wvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_wvalid : out STD_LOGIC;
     S_ACLK : in STD_LOGIC;
     S_ARESETN : in STD_LOGIC;
     S_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_arready : out STD_LOGIC_VECTOR ( 0 to 0 );
-    S_AXI_arvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_arready : out STD_LOGIC;
+    S_AXI_arvalid : in STD_LOGIC;
     S_AXI_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_awready : out STD_LOGIC_VECTOR ( 0 to 0 );
-    S_AXI_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    S_AXI_bready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_awready : out STD_LOGIC;
+    S_AXI_awvalid : in STD_LOGIC;
+    S_AXI_bready : in STD_LOGIC;
     S_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_bvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_bvalid : out STD_LOGIC;
     S_AXI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_rready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_rready : in STD_LOGIC;
     S_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_rvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_rvalid : out STD_LOGIC;
     S_AXI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_wready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_wready : out STD_LOGIC;
     S_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
+    S_AXI_wvalid : in STD_LOGIC
   );
 end m01_couplers_imp_GOJGMC;
 
 architecture STRUCTURE of m01_couplers_imp_GOJGMC is
   signal m01_couplers_to_m01_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m01_couplers_to_m01_couplers_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m01_couplers_to_m01_couplers_ARVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_ARREADY : STD_LOGIC;
+  signal m01_couplers_to_m01_couplers_ARVALID : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m01_couplers_to_m01_couplers_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m01_couplers_to_m01_couplers_AWVALID : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m01_couplers_to_m01_couplers_BREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_AWREADY : STD_LOGIC;
+  signal m01_couplers_to_m01_couplers_AWVALID : STD_LOGIC;
+  signal m01_couplers_to_m01_couplers_BREADY : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal m01_couplers_to_m01_couplers_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_BVALID : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m01_couplers_to_m01_couplers_RREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_RREADY : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal m01_couplers_to_m01_couplers_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_RVALID : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m01_couplers_to_m01_couplers_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_WREADY : STD_LOGIC;
   signal m01_couplers_to_m01_couplers_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal m01_couplers_to_m01_couplers_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_m01_couplers_WVALID : STD_LOGIC;
 begin
   M_AXI_araddr(31 downto 0) <= m01_couplers_to_m01_couplers_ARADDR(31 downto 0);
-  M_AXI_arvalid(0) <= m01_couplers_to_m01_couplers_ARVALID(0);
+  M_AXI_arvalid <= m01_couplers_to_m01_couplers_ARVALID;
   M_AXI_awaddr(31 downto 0) <= m01_couplers_to_m01_couplers_AWADDR(31 downto 0);
-  M_AXI_awvalid(0) <= m01_couplers_to_m01_couplers_AWVALID(0);
-  M_AXI_bready(0) <= m01_couplers_to_m01_couplers_BREADY(0);
-  M_AXI_rready(0) <= m01_couplers_to_m01_couplers_RREADY(0);
+  M_AXI_awvalid <= m01_couplers_to_m01_couplers_AWVALID;
+  M_AXI_bready <= m01_couplers_to_m01_couplers_BREADY;
+  M_AXI_rready <= m01_couplers_to_m01_couplers_RREADY;
   M_AXI_wdata(31 downto 0) <= m01_couplers_to_m01_couplers_WDATA(31 downto 0);
   M_AXI_wstrb(3 downto 0) <= m01_couplers_to_m01_couplers_WSTRB(3 downto 0);
-  M_AXI_wvalid(0) <= m01_couplers_to_m01_couplers_WVALID(0);
-  S_AXI_arready(0) <= m01_couplers_to_m01_couplers_ARREADY(0);
-  S_AXI_awready(0) <= m01_couplers_to_m01_couplers_AWREADY(0);
+  M_AXI_wvalid <= m01_couplers_to_m01_couplers_WVALID;
+  S_AXI_arready <= m01_couplers_to_m01_couplers_ARREADY;
+  S_AXI_awready <= m01_couplers_to_m01_couplers_AWREADY;
   S_AXI_bresp(1 downto 0) <= m01_couplers_to_m01_couplers_BRESP(1 downto 0);
-  S_AXI_bvalid(0) <= m01_couplers_to_m01_couplers_BVALID(0);
+  S_AXI_bvalid <= m01_couplers_to_m01_couplers_BVALID;
   S_AXI_rdata(31 downto 0) <= m01_couplers_to_m01_couplers_RDATA(31 downto 0);
   S_AXI_rresp(1 downto 0) <= m01_couplers_to_m01_couplers_RRESP(1 downto 0);
-  S_AXI_rvalid(0) <= m01_couplers_to_m01_couplers_RVALID(0);
-  S_AXI_wready(0) <= m01_couplers_to_m01_couplers_WREADY(0);
+  S_AXI_rvalid <= m01_couplers_to_m01_couplers_RVALID;
+  S_AXI_wready <= m01_couplers_to_m01_couplers_WREADY;
   m01_couplers_to_m01_couplers_ARADDR(31 downto 0) <= S_AXI_araddr(31 downto 0);
-  m01_couplers_to_m01_couplers_ARREADY(0) <= M_AXI_arready(0);
-  m01_couplers_to_m01_couplers_ARVALID(0) <= S_AXI_arvalid(0);
+  m01_couplers_to_m01_couplers_ARREADY <= M_AXI_arready;
+  m01_couplers_to_m01_couplers_ARVALID <= S_AXI_arvalid;
   m01_couplers_to_m01_couplers_AWADDR(31 downto 0) <= S_AXI_awaddr(31 downto 0);
-  m01_couplers_to_m01_couplers_AWREADY(0) <= M_AXI_awready(0);
-  m01_couplers_to_m01_couplers_AWVALID(0) <= S_AXI_awvalid(0);
-  m01_couplers_to_m01_couplers_BREADY(0) <= S_AXI_bready(0);
+  m01_couplers_to_m01_couplers_AWREADY <= M_AXI_awready;
+  m01_couplers_to_m01_couplers_AWVALID <= S_AXI_awvalid;
+  m01_couplers_to_m01_couplers_BREADY <= S_AXI_bready;
   m01_couplers_to_m01_couplers_BRESP(1 downto 0) <= M_AXI_bresp(1 downto 0);
-  m01_couplers_to_m01_couplers_BVALID(0) <= M_AXI_bvalid(0);
+  m01_couplers_to_m01_couplers_BVALID <= M_AXI_bvalid;
   m01_couplers_to_m01_couplers_RDATA(31 downto 0) <= M_AXI_rdata(31 downto 0);
-  m01_couplers_to_m01_couplers_RREADY(0) <= S_AXI_rready(0);
+  m01_couplers_to_m01_couplers_RREADY <= S_AXI_rready;
   m01_couplers_to_m01_couplers_RRESP(1 downto 0) <= M_AXI_rresp(1 downto 0);
-  m01_couplers_to_m01_couplers_RVALID(0) <= M_AXI_rvalid(0);
+  m01_couplers_to_m01_couplers_RVALID <= M_AXI_rvalid;
   m01_couplers_to_m01_couplers_WDATA(31 downto 0) <= S_AXI_wdata(31 downto 0);
-  m01_couplers_to_m01_couplers_WREADY(0) <= M_AXI_wready(0);
+  m01_couplers_to_m01_couplers_WREADY <= M_AXI_wready;
   m01_couplers_to_m01_couplers_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
-  m01_couplers_to_m01_couplers_WVALID(0) <= S_AXI_wvalid(0);
+  m01_couplers_to_m01_couplers_WVALID <= S_AXI_wvalid;
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -430,97 +430,97 @@ entity m02_couplers_imp_1872YX9 is
     M_ACLK : in STD_LOGIC;
     M_ARESETN : in STD_LOGIC;
     M_AXI_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_arready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M_AXI_arvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_arready : in STD_LOGIC;
+    M_AXI_arvalid : out STD_LOGIC;
     M_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_awready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M_AXI_awvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    M_AXI_bready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_awready : in STD_LOGIC;
+    M_AXI_awvalid : out STD_LOGIC;
+    M_AXI_bready : out STD_LOGIC;
     M_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_bvalid : in STD_LOGIC;
     M_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_rready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_rready : out STD_LOGIC;
     M_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_rvalid : in STD_LOGIC;
     M_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_wready : in STD_LOGIC;
     M_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_wvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M_AXI_wvalid : out STD_LOGIC;
     S_ACLK : in STD_LOGIC;
     S_ARESETN : in STD_LOGIC;
     S_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_arready : out STD_LOGIC_VECTOR ( 0 to 0 );
-    S_AXI_arvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_arready : out STD_LOGIC;
+    S_AXI_arvalid : in STD_LOGIC;
     S_AXI_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_awready : out STD_LOGIC_VECTOR ( 0 to 0 );
-    S_AXI_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    S_AXI_bready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_awready : out STD_LOGIC;
+    S_AXI_awvalid : in STD_LOGIC;
+    S_AXI_bready : in STD_LOGIC;
     S_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_bvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_bvalid : out STD_LOGIC;
     S_AXI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_rready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_rready : in STD_LOGIC;
     S_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_rvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_rvalid : out STD_LOGIC;
     S_AXI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_wready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_wready : out STD_LOGIC;
     S_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
+    S_AXI_wvalid : in STD_LOGIC
   );
 end m02_couplers_imp_1872YX9;
 
 architecture STRUCTURE of m02_couplers_imp_1872YX9 is
   signal m02_couplers_to_m02_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m02_couplers_to_m02_couplers_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m02_couplers_to_m02_couplers_ARVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_ARREADY : STD_LOGIC;
+  signal m02_couplers_to_m02_couplers_ARVALID : STD_LOGIC;
   signal m02_couplers_to_m02_couplers_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m02_couplers_to_m02_couplers_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m02_couplers_to_m02_couplers_AWVALID : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m02_couplers_to_m02_couplers_BREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_AWREADY : STD_LOGIC;
+  signal m02_couplers_to_m02_couplers_AWVALID : STD_LOGIC;
+  signal m02_couplers_to_m02_couplers_BREADY : STD_LOGIC;
   signal m02_couplers_to_m02_couplers_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal m02_couplers_to_m02_couplers_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_BVALID : STD_LOGIC;
   signal m02_couplers_to_m02_couplers_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m02_couplers_to_m02_couplers_RREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_RREADY : STD_LOGIC;
   signal m02_couplers_to_m02_couplers_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal m02_couplers_to_m02_couplers_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_RVALID : STD_LOGIC;
   signal m02_couplers_to_m02_couplers_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m02_couplers_to_m02_couplers_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_WREADY : STD_LOGIC;
   signal m02_couplers_to_m02_couplers_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal m02_couplers_to_m02_couplers_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_m02_couplers_WVALID : STD_LOGIC;
 begin
   M_AXI_araddr(31 downto 0) <= m02_couplers_to_m02_couplers_ARADDR(31 downto 0);
-  M_AXI_arvalid(0) <= m02_couplers_to_m02_couplers_ARVALID(0);
+  M_AXI_arvalid <= m02_couplers_to_m02_couplers_ARVALID;
   M_AXI_awaddr(31 downto 0) <= m02_couplers_to_m02_couplers_AWADDR(31 downto 0);
-  M_AXI_awvalid(0) <= m02_couplers_to_m02_couplers_AWVALID(0);
-  M_AXI_bready(0) <= m02_couplers_to_m02_couplers_BREADY(0);
-  M_AXI_rready(0) <= m02_couplers_to_m02_couplers_RREADY(0);
+  M_AXI_awvalid <= m02_couplers_to_m02_couplers_AWVALID;
+  M_AXI_bready <= m02_couplers_to_m02_couplers_BREADY;
+  M_AXI_rready <= m02_couplers_to_m02_couplers_RREADY;
   M_AXI_wdata(31 downto 0) <= m02_couplers_to_m02_couplers_WDATA(31 downto 0);
   M_AXI_wstrb(3 downto 0) <= m02_couplers_to_m02_couplers_WSTRB(3 downto 0);
-  M_AXI_wvalid(0) <= m02_couplers_to_m02_couplers_WVALID(0);
-  S_AXI_arready(0) <= m02_couplers_to_m02_couplers_ARREADY(0);
-  S_AXI_awready(0) <= m02_couplers_to_m02_couplers_AWREADY(0);
+  M_AXI_wvalid <= m02_couplers_to_m02_couplers_WVALID;
+  S_AXI_arready <= m02_couplers_to_m02_couplers_ARREADY;
+  S_AXI_awready <= m02_couplers_to_m02_couplers_AWREADY;
   S_AXI_bresp(1 downto 0) <= m02_couplers_to_m02_couplers_BRESP(1 downto 0);
-  S_AXI_bvalid(0) <= m02_couplers_to_m02_couplers_BVALID(0);
+  S_AXI_bvalid <= m02_couplers_to_m02_couplers_BVALID;
   S_AXI_rdata(31 downto 0) <= m02_couplers_to_m02_couplers_RDATA(31 downto 0);
   S_AXI_rresp(1 downto 0) <= m02_couplers_to_m02_couplers_RRESP(1 downto 0);
-  S_AXI_rvalid(0) <= m02_couplers_to_m02_couplers_RVALID(0);
-  S_AXI_wready(0) <= m02_couplers_to_m02_couplers_WREADY(0);
+  S_AXI_rvalid <= m02_couplers_to_m02_couplers_RVALID;
+  S_AXI_wready <= m02_couplers_to_m02_couplers_WREADY;
   m02_couplers_to_m02_couplers_ARADDR(31 downto 0) <= S_AXI_araddr(31 downto 0);
-  m02_couplers_to_m02_couplers_ARREADY(0) <= M_AXI_arready(0);
-  m02_couplers_to_m02_couplers_ARVALID(0) <= S_AXI_arvalid(0);
+  m02_couplers_to_m02_couplers_ARREADY <= M_AXI_arready;
+  m02_couplers_to_m02_couplers_ARVALID <= S_AXI_arvalid;
   m02_couplers_to_m02_couplers_AWADDR(31 downto 0) <= S_AXI_awaddr(31 downto 0);
-  m02_couplers_to_m02_couplers_AWREADY(0) <= M_AXI_awready(0);
-  m02_couplers_to_m02_couplers_AWVALID(0) <= S_AXI_awvalid(0);
-  m02_couplers_to_m02_couplers_BREADY(0) <= S_AXI_bready(0);
+  m02_couplers_to_m02_couplers_AWREADY <= M_AXI_awready;
+  m02_couplers_to_m02_couplers_AWVALID <= S_AXI_awvalid;
+  m02_couplers_to_m02_couplers_BREADY <= S_AXI_bready;
   m02_couplers_to_m02_couplers_BRESP(1 downto 0) <= M_AXI_bresp(1 downto 0);
-  m02_couplers_to_m02_couplers_BVALID(0) <= M_AXI_bvalid(0);
+  m02_couplers_to_m02_couplers_BVALID <= M_AXI_bvalid;
   m02_couplers_to_m02_couplers_RDATA(31 downto 0) <= M_AXI_rdata(31 downto 0);
-  m02_couplers_to_m02_couplers_RREADY(0) <= S_AXI_rready(0);
+  m02_couplers_to_m02_couplers_RREADY <= S_AXI_rready;
   m02_couplers_to_m02_couplers_RRESP(1 downto 0) <= M_AXI_rresp(1 downto 0);
-  m02_couplers_to_m02_couplers_RVALID(0) <= M_AXI_rvalid(0);
+  m02_couplers_to_m02_couplers_RVALID <= M_AXI_rvalid;
   m02_couplers_to_m02_couplers_WDATA(31 downto 0) <= S_AXI_wdata(31 downto 0);
-  m02_couplers_to_m02_couplers_WREADY(0) <= M_AXI_wready(0);
+  m02_couplers_to_m02_couplers_WREADY <= M_AXI_wready;
   m02_couplers_to_m02_couplers_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
-  m02_couplers_to_m02_couplers_WVALID(0) <= S_AXI_wvalid(0);
+  m02_couplers_to_m02_couplers_WVALID <= S_AXI_wvalid;
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -3789,38 +3789,38 @@ architecture STRUCTURE of dualBlaze_microblaze_1_axi_periph_0 is
   signal m00_couplers_to_microblaze_1_axi_periph_WVALID : STD_LOGIC;
   signal m01_couplers_to_microblaze_1_axi_periph_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m01_couplers_to_microblaze_1_axi_periph_ARVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_microblaze_1_axi_periph_ARVALID : STD_LOGIC;
   signal m01_couplers_to_microblaze_1_axi_periph_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m01_couplers_to_microblaze_1_axi_periph_AWVALID : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m01_couplers_to_microblaze_1_axi_periph_BREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_microblaze_1_axi_periph_AWVALID : STD_LOGIC;
+  signal m01_couplers_to_microblaze_1_axi_periph_BREADY : STD_LOGIC;
   signal m01_couplers_to_microblaze_1_axi_periph_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m01_couplers_to_microblaze_1_axi_periph_RREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_microblaze_1_axi_periph_RREADY : STD_LOGIC;
   signal m01_couplers_to_microblaze_1_axi_periph_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m01_couplers_to_microblaze_1_axi_periph_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal m01_couplers_to_microblaze_1_axi_periph_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m01_couplers_to_microblaze_1_axi_periph_WVALID : STD_LOGIC;
   signal m02_couplers_to_microblaze_1_axi_periph_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m02_couplers_to_microblaze_1_axi_periph_ARVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_microblaze_1_axi_periph_ARVALID : STD_LOGIC;
   signal m02_couplers_to_microblaze_1_axi_periph_AWADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m02_couplers_to_microblaze_1_axi_periph_AWVALID : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal m02_couplers_to_microblaze_1_axi_periph_BREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_microblaze_1_axi_periph_AWVALID : STD_LOGIC;
+  signal m02_couplers_to_microblaze_1_axi_periph_BREADY : STD_LOGIC;
   signal m02_couplers_to_microblaze_1_axi_periph_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m02_couplers_to_microblaze_1_axi_periph_RREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_microblaze_1_axi_periph_RREADY : STD_LOGIC;
   signal m02_couplers_to_microblaze_1_axi_periph_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m02_couplers_to_microblaze_1_axi_periph_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal m02_couplers_to_microblaze_1_axi_periph_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m02_couplers_to_microblaze_1_axi_periph_WVALID : STD_LOGIC;
   signal m03_couplers_to_microblaze_1_axi_periph_ARADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal m03_couplers_to_microblaze_1_axi_periph_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal m03_couplers_to_microblaze_1_axi_periph_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3910,37 +3910,37 @@ architecture STRUCTURE of dualBlaze_microblaze_1_axi_periph_0 is
   signal xbar_to_m00_couplers_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal xbar_to_m00_couplers_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xbar_to_m01_couplers_ARADDR : STD_LOGIC_VECTOR ( 63 downto 32 );
-  signal xbar_to_m01_couplers_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m01_couplers_ARREADY : STD_LOGIC;
   signal xbar_to_m01_couplers_ARVALID : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m01_couplers_AWADDR : STD_LOGIC_VECTOR ( 63 downto 32 );
-  signal xbar_to_m01_couplers_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m01_couplers_AWREADY : STD_LOGIC;
   signal xbar_to_m01_couplers_AWVALID : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m01_couplers_BREADY : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m01_couplers_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal xbar_to_m01_couplers_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m01_couplers_BVALID : STD_LOGIC;
   signal xbar_to_m01_couplers_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal xbar_to_m01_couplers_RREADY : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m01_couplers_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal xbar_to_m01_couplers_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m01_couplers_RVALID : STD_LOGIC;
   signal xbar_to_m01_couplers_WDATA : STD_LOGIC_VECTOR ( 63 downto 32 );
-  signal xbar_to_m01_couplers_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m01_couplers_WREADY : STD_LOGIC;
   signal xbar_to_m01_couplers_WSTRB : STD_LOGIC_VECTOR ( 7 downto 4 );
   signal xbar_to_m01_couplers_WVALID : STD_LOGIC_VECTOR ( 1 to 1 );
   signal xbar_to_m02_couplers_ARADDR : STD_LOGIC_VECTOR ( 95 downto 64 );
-  signal xbar_to_m02_couplers_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m02_couplers_ARREADY : STD_LOGIC;
   signal xbar_to_m02_couplers_ARVALID : STD_LOGIC_VECTOR ( 2 to 2 );
   signal xbar_to_m02_couplers_AWADDR : STD_LOGIC_VECTOR ( 95 downto 64 );
-  signal xbar_to_m02_couplers_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m02_couplers_AWREADY : STD_LOGIC;
   signal xbar_to_m02_couplers_AWVALID : STD_LOGIC_VECTOR ( 2 to 2 );
   signal xbar_to_m02_couplers_BREADY : STD_LOGIC_VECTOR ( 2 to 2 );
   signal xbar_to_m02_couplers_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal xbar_to_m02_couplers_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m02_couplers_BVALID : STD_LOGIC;
   signal xbar_to_m02_couplers_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal xbar_to_m02_couplers_RREADY : STD_LOGIC_VECTOR ( 2 to 2 );
   signal xbar_to_m02_couplers_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal xbar_to_m02_couplers_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m02_couplers_RVALID : STD_LOGIC;
   signal xbar_to_m02_couplers_WDATA : STD_LOGIC_VECTOR ( 95 downto 64 );
-  signal xbar_to_m02_couplers_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xbar_to_m02_couplers_WREADY : STD_LOGIC;
   signal xbar_to_m02_couplers_WSTRB : STD_LOGIC_VECTOR ( 11 downto 8 );
   signal xbar_to_m02_couplers_WVALID : STD_LOGIC_VECTOR ( 2 to 2 );
   signal xbar_to_m03_couplers_ARADDR : STD_LOGIC_VECTOR ( 127 downto 96 );
@@ -3975,23 +3975,23 @@ begin
   M00_AXI_wstrb(0) <= m00_couplers_to_microblaze_1_axi_periph_WSTRB;
   M00_AXI_wvalid(0) <= m00_couplers_to_microblaze_1_axi_periph_WVALID;
   M01_AXI_araddr(31 downto 0) <= m01_couplers_to_microblaze_1_axi_periph_ARADDR(31 downto 0);
-  M01_AXI_arvalid(0) <= m01_couplers_to_microblaze_1_axi_periph_ARVALID(0);
+  M01_AXI_arvalid(0) <= m01_couplers_to_microblaze_1_axi_periph_ARVALID;
   M01_AXI_awaddr(31 downto 0) <= m01_couplers_to_microblaze_1_axi_periph_AWADDR(31 downto 0);
-  M01_AXI_awvalid(0) <= m01_couplers_to_microblaze_1_axi_periph_AWVALID(0);
-  M01_AXI_bready(0) <= m01_couplers_to_microblaze_1_axi_periph_BREADY(0);
-  M01_AXI_rready(0) <= m01_couplers_to_microblaze_1_axi_periph_RREADY(0);
+  M01_AXI_awvalid(0) <= m01_couplers_to_microblaze_1_axi_periph_AWVALID;
+  M01_AXI_bready(0) <= m01_couplers_to_microblaze_1_axi_periph_BREADY;
+  M01_AXI_rready(0) <= m01_couplers_to_microblaze_1_axi_periph_RREADY;
   M01_AXI_wdata(31 downto 0) <= m01_couplers_to_microblaze_1_axi_periph_WDATA(31 downto 0);
   M01_AXI_wstrb(3 downto 0) <= m01_couplers_to_microblaze_1_axi_periph_WSTRB(3 downto 0);
-  M01_AXI_wvalid(0) <= m01_couplers_to_microblaze_1_axi_periph_WVALID(0);
+  M01_AXI_wvalid(0) <= m01_couplers_to_microblaze_1_axi_periph_WVALID;
   M02_AXI_araddr(31 downto 0) <= m02_couplers_to_microblaze_1_axi_periph_ARADDR(31 downto 0);
-  M02_AXI_arvalid(0) <= m02_couplers_to_microblaze_1_axi_periph_ARVALID(0);
+  M02_AXI_arvalid(0) <= m02_couplers_to_microblaze_1_axi_periph_ARVALID;
   M02_AXI_awaddr(31 downto 0) <= m02_couplers_to_microblaze_1_axi_periph_AWADDR(31 downto 0);
-  M02_AXI_awvalid(0) <= m02_couplers_to_microblaze_1_axi_periph_AWVALID(0);
-  M02_AXI_bready(0) <= m02_couplers_to_microblaze_1_axi_periph_BREADY(0);
-  M02_AXI_rready(0) <= m02_couplers_to_microblaze_1_axi_periph_RREADY(0);
+  M02_AXI_awvalid(0) <= m02_couplers_to_microblaze_1_axi_periph_AWVALID;
+  M02_AXI_bready(0) <= m02_couplers_to_microblaze_1_axi_periph_BREADY;
+  M02_AXI_rready(0) <= m02_couplers_to_microblaze_1_axi_periph_RREADY;
   M02_AXI_wdata(31 downto 0) <= m02_couplers_to_microblaze_1_axi_periph_WDATA(31 downto 0);
   M02_AXI_wstrb(3 downto 0) <= m02_couplers_to_microblaze_1_axi_periph_WSTRB(3 downto 0);
-  M02_AXI_wvalid(0) <= m02_couplers_to_microblaze_1_axi_periph_WVALID(0);
+  M02_AXI_wvalid(0) <= m02_couplers_to_microblaze_1_axi_periph_WVALID;
   M03_AXI_araddr(12 downto 0) <= m03_couplers_to_microblaze_1_axi_periph_ARADDR(12 downto 0);
   M03_AXI_arburst(1 downto 0) <= m03_couplers_to_microblaze_1_axi_periph_ARBURST(1 downto 0);
   M03_AXI_arcache(3 downto 0) <= m03_couplers_to_microblaze_1_axi_periph_ARCACHE(3 downto 0);
@@ -4210,82 +4210,82 @@ m01_couplers: entity work.m01_couplers_imp_GOJGMC
       M_ACLK => microblaze_1_axi_periph_ACLK_net,
       M_ARESETN => microblaze_1_axi_periph_ARESETN_net,
       M_AXI_araddr(31 downto 0) => m01_couplers_to_microblaze_1_axi_periph_ARADDR(31 downto 0),
-      M_AXI_arready(0) => m01_couplers_to_microblaze_1_axi_periph_ARREADY(0),
-      M_AXI_arvalid(0) => m01_couplers_to_microblaze_1_axi_periph_ARVALID(0),
+      M_AXI_arready => m01_couplers_to_microblaze_1_axi_periph_ARREADY(0),
+      M_AXI_arvalid => m01_couplers_to_microblaze_1_axi_periph_ARVALID,
       M_AXI_awaddr(31 downto 0) => m01_couplers_to_microblaze_1_axi_periph_AWADDR(31 downto 0),
-      M_AXI_awready(0) => m01_couplers_to_microblaze_1_axi_periph_AWREADY(0),
-      M_AXI_awvalid(0) => m01_couplers_to_microblaze_1_axi_periph_AWVALID(0),
-      M_AXI_bready(0) => m01_couplers_to_microblaze_1_axi_periph_BREADY(0),
+      M_AXI_awready => m01_couplers_to_microblaze_1_axi_periph_AWREADY(0),
+      M_AXI_awvalid => m01_couplers_to_microblaze_1_axi_periph_AWVALID,
+      M_AXI_bready => m01_couplers_to_microblaze_1_axi_periph_BREADY,
       M_AXI_bresp(1 downto 0) => m01_couplers_to_microblaze_1_axi_periph_BRESP(1 downto 0),
-      M_AXI_bvalid(0) => m01_couplers_to_microblaze_1_axi_periph_BVALID(0),
+      M_AXI_bvalid => m01_couplers_to_microblaze_1_axi_periph_BVALID(0),
       M_AXI_rdata(31 downto 0) => m01_couplers_to_microblaze_1_axi_periph_RDATA(31 downto 0),
-      M_AXI_rready(0) => m01_couplers_to_microblaze_1_axi_periph_RREADY(0),
+      M_AXI_rready => m01_couplers_to_microblaze_1_axi_periph_RREADY,
       M_AXI_rresp(1 downto 0) => m01_couplers_to_microblaze_1_axi_periph_RRESP(1 downto 0),
-      M_AXI_rvalid(0) => m01_couplers_to_microblaze_1_axi_periph_RVALID(0),
+      M_AXI_rvalid => m01_couplers_to_microblaze_1_axi_periph_RVALID(0),
       M_AXI_wdata(31 downto 0) => m01_couplers_to_microblaze_1_axi_periph_WDATA(31 downto 0),
-      M_AXI_wready(0) => m01_couplers_to_microblaze_1_axi_periph_WREADY(0),
+      M_AXI_wready => m01_couplers_to_microblaze_1_axi_periph_WREADY(0),
       M_AXI_wstrb(3 downto 0) => m01_couplers_to_microblaze_1_axi_periph_WSTRB(3 downto 0),
-      M_AXI_wvalid(0) => m01_couplers_to_microblaze_1_axi_periph_WVALID(0),
+      M_AXI_wvalid => m01_couplers_to_microblaze_1_axi_periph_WVALID,
       S_ACLK => microblaze_1_axi_periph_ACLK_net,
       S_ARESETN => microblaze_1_axi_periph_ARESETN_net,
       S_AXI_araddr(31 downto 0) => xbar_to_m01_couplers_ARADDR(63 downto 32),
-      S_AXI_arready(0) => xbar_to_m01_couplers_ARREADY(0),
-      S_AXI_arvalid(0) => xbar_to_m01_couplers_ARVALID(1),
+      S_AXI_arready => xbar_to_m01_couplers_ARREADY,
+      S_AXI_arvalid => xbar_to_m01_couplers_ARVALID(1),
       S_AXI_awaddr(31 downto 0) => xbar_to_m01_couplers_AWADDR(63 downto 32),
-      S_AXI_awready(0) => xbar_to_m01_couplers_AWREADY(0),
-      S_AXI_awvalid(0) => xbar_to_m01_couplers_AWVALID(1),
-      S_AXI_bready(0) => xbar_to_m01_couplers_BREADY(1),
+      S_AXI_awready => xbar_to_m01_couplers_AWREADY,
+      S_AXI_awvalid => xbar_to_m01_couplers_AWVALID(1),
+      S_AXI_bready => xbar_to_m01_couplers_BREADY(1),
       S_AXI_bresp(1 downto 0) => xbar_to_m01_couplers_BRESP(1 downto 0),
-      S_AXI_bvalid(0) => xbar_to_m01_couplers_BVALID(0),
+      S_AXI_bvalid => xbar_to_m01_couplers_BVALID,
       S_AXI_rdata(31 downto 0) => xbar_to_m01_couplers_RDATA(31 downto 0),
-      S_AXI_rready(0) => xbar_to_m01_couplers_RREADY(1),
+      S_AXI_rready => xbar_to_m01_couplers_RREADY(1),
       S_AXI_rresp(1 downto 0) => xbar_to_m01_couplers_RRESP(1 downto 0),
-      S_AXI_rvalid(0) => xbar_to_m01_couplers_RVALID(0),
+      S_AXI_rvalid => xbar_to_m01_couplers_RVALID,
       S_AXI_wdata(31 downto 0) => xbar_to_m01_couplers_WDATA(63 downto 32),
-      S_AXI_wready(0) => xbar_to_m01_couplers_WREADY(0),
+      S_AXI_wready => xbar_to_m01_couplers_WREADY,
       S_AXI_wstrb(3 downto 0) => xbar_to_m01_couplers_WSTRB(7 downto 4),
-      S_AXI_wvalid(0) => xbar_to_m01_couplers_WVALID(1)
+      S_AXI_wvalid => xbar_to_m01_couplers_WVALID(1)
     );
 m02_couplers: entity work.m02_couplers_imp_1872YX9
      port map (
       M_ACLK => microblaze_1_axi_periph_ACLK_net,
       M_ARESETN => microblaze_1_axi_periph_ARESETN_net,
       M_AXI_araddr(31 downto 0) => m02_couplers_to_microblaze_1_axi_periph_ARADDR(31 downto 0),
-      M_AXI_arready(0) => m02_couplers_to_microblaze_1_axi_periph_ARREADY(0),
-      M_AXI_arvalid(0) => m02_couplers_to_microblaze_1_axi_periph_ARVALID(0),
+      M_AXI_arready => m02_couplers_to_microblaze_1_axi_periph_ARREADY(0),
+      M_AXI_arvalid => m02_couplers_to_microblaze_1_axi_periph_ARVALID,
       M_AXI_awaddr(31 downto 0) => m02_couplers_to_microblaze_1_axi_periph_AWADDR(31 downto 0),
-      M_AXI_awready(0) => m02_couplers_to_microblaze_1_axi_periph_AWREADY(0),
-      M_AXI_awvalid(0) => m02_couplers_to_microblaze_1_axi_periph_AWVALID(0),
-      M_AXI_bready(0) => m02_couplers_to_microblaze_1_axi_periph_BREADY(0),
+      M_AXI_awready => m02_couplers_to_microblaze_1_axi_periph_AWREADY(0),
+      M_AXI_awvalid => m02_couplers_to_microblaze_1_axi_periph_AWVALID,
+      M_AXI_bready => m02_couplers_to_microblaze_1_axi_periph_BREADY,
       M_AXI_bresp(1 downto 0) => m02_couplers_to_microblaze_1_axi_periph_BRESP(1 downto 0),
-      M_AXI_bvalid(0) => m02_couplers_to_microblaze_1_axi_periph_BVALID(0),
+      M_AXI_bvalid => m02_couplers_to_microblaze_1_axi_periph_BVALID(0),
       M_AXI_rdata(31 downto 0) => m02_couplers_to_microblaze_1_axi_periph_RDATA(31 downto 0),
-      M_AXI_rready(0) => m02_couplers_to_microblaze_1_axi_periph_RREADY(0),
+      M_AXI_rready => m02_couplers_to_microblaze_1_axi_periph_RREADY,
       M_AXI_rresp(1 downto 0) => m02_couplers_to_microblaze_1_axi_periph_RRESP(1 downto 0),
-      M_AXI_rvalid(0) => m02_couplers_to_microblaze_1_axi_periph_RVALID(0),
+      M_AXI_rvalid => m02_couplers_to_microblaze_1_axi_periph_RVALID(0),
       M_AXI_wdata(31 downto 0) => m02_couplers_to_microblaze_1_axi_periph_WDATA(31 downto 0),
-      M_AXI_wready(0) => m02_couplers_to_microblaze_1_axi_periph_WREADY(0),
+      M_AXI_wready => m02_couplers_to_microblaze_1_axi_periph_WREADY(0),
       M_AXI_wstrb(3 downto 0) => m02_couplers_to_microblaze_1_axi_periph_WSTRB(3 downto 0),
-      M_AXI_wvalid(0) => m02_couplers_to_microblaze_1_axi_periph_WVALID(0),
+      M_AXI_wvalid => m02_couplers_to_microblaze_1_axi_periph_WVALID,
       S_ACLK => microblaze_1_axi_periph_ACLK_net,
       S_ARESETN => microblaze_1_axi_periph_ARESETN_net,
       S_AXI_araddr(31 downto 0) => xbar_to_m02_couplers_ARADDR(95 downto 64),
-      S_AXI_arready(0) => xbar_to_m02_couplers_ARREADY(0),
-      S_AXI_arvalid(0) => xbar_to_m02_couplers_ARVALID(2),
+      S_AXI_arready => xbar_to_m02_couplers_ARREADY,
+      S_AXI_arvalid => xbar_to_m02_couplers_ARVALID(2),
       S_AXI_awaddr(31 downto 0) => xbar_to_m02_couplers_AWADDR(95 downto 64),
-      S_AXI_awready(0) => xbar_to_m02_couplers_AWREADY(0),
-      S_AXI_awvalid(0) => xbar_to_m02_couplers_AWVALID(2),
-      S_AXI_bready(0) => xbar_to_m02_couplers_BREADY(2),
+      S_AXI_awready => xbar_to_m02_couplers_AWREADY,
+      S_AXI_awvalid => xbar_to_m02_couplers_AWVALID(2),
+      S_AXI_bready => xbar_to_m02_couplers_BREADY(2),
       S_AXI_bresp(1 downto 0) => xbar_to_m02_couplers_BRESP(1 downto 0),
-      S_AXI_bvalid(0) => xbar_to_m02_couplers_BVALID(0),
+      S_AXI_bvalid => xbar_to_m02_couplers_BVALID,
       S_AXI_rdata(31 downto 0) => xbar_to_m02_couplers_RDATA(31 downto 0),
-      S_AXI_rready(0) => xbar_to_m02_couplers_RREADY(2),
+      S_AXI_rready => xbar_to_m02_couplers_RREADY(2),
       S_AXI_rresp(1 downto 0) => xbar_to_m02_couplers_RRESP(1 downto 0),
-      S_AXI_rvalid(0) => xbar_to_m02_couplers_RVALID(0),
+      S_AXI_rvalid => xbar_to_m02_couplers_RVALID,
       S_AXI_wdata(31 downto 0) => xbar_to_m02_couplers_WDATA(95 downto 64),
-      S_AXI_wready(0) => xbar_to_m02_couplers_WREADY(0),
+      S_AXI_wready => xbar_to_m02_couplers_WREADY,
       S_AXI_wstrb(3 downto 0) => xbar_to_m02_couplers_WSTRB(11 downto 8),
-      S_AXI_wvalid(0) => xbar_to_m02_couplers_WVALID(2)
+      S_AXI_wvalid => xbar_to_m02_couplers_WVALID(2)
     );
 m03_couplers: entity work.m03_couplers_imp_K5V8YD
      port map (
@@ -4400,8 +4400,8 @@ xbar: component dualBlaze_xbar_1
       m_axi_arprot(11 downto 9) => xbar_to_m03_couplers_ARPROT(11 downto 9),
       m_axi_arprot(8 downto 0) => NLW_xbar_m_axi_arprot_UNCONNECTED(8 downto 0),
       m_axi_arready(3) => xbar_to_m03_couplers_ARREADY,
-      m_axi_arready(2) => xbar_to_m02_couplers_ARREADY(0),
-      m_axi_arready(1) => xbar_to_m01_couplers_ARREADY(0),
+      m_axi_arready(2) => xbar_to_m02_couplers_ARREADY,
+      m_axi_arready(1) => xbar_to_m01_couplers_ARREADY,
       m_axi_arready(0) => xbar_to_m00_couplers_ARREADY,
       m_axi_arvalid(3) => xbar_to_m03_couplers_ARVALID(3),
       m_axi_arvalid(2) => xbar_to_m02_couplers_ARVALID(2),
@@ -4414,8 +4414,8 @@ xbar: component dualBlaze_xbar_1
       m_axi_awprot(11 downto 9) => xbar_to_m03_couplers_AWPROT(11 downto 9),
       m_axi_awprot(8 downto 0) => NLW_xbar_m_axi_awprot_UNCONNECTED(8 downto 0),
       m_axi_awready(3) => xbar_to_m03_couplers_AWREADY,
-      m_axi_awready(2) => xbar_to_m02_couplers_AWREADY(0),
-      m_axi_awready(1) => xbar_to_m01_couplers_AWREADY(0),
+      m_axi_awready(2) => xbar_to_m02_couplers_AWREADY,
+      m_axi_awready(1) => xbar_to_m01_couplers_AWREADY,
       m_axi_awready(0) => xbar_to_m00_couplers_AWREADY,
       m_axi_awvalid(3) => xbar_to_m03_couplers_AWVALID(3),
       m_axi_awvalid(2) => xbar_to_m02_couplers_AWVALID(2),
@@ -4431,8 +4431,8 @@ xbar: component dualBlaze_xbar_1
       m_axi_bresp(1) => xbar_to_m00_couplers_BRESP,
       m_axi_bresp(0) => xbar_to_m00_couplers_BRESP,
       m_axi_bvalid(3) => xbar_to_m03_couplers_BVALID,
-      m_axi_bvalid(2) => xbar_to_m02_couplers_BVALID(0),
-      m_axi_bvalid(1) => xbar_to_m01_couplers_BVALID(0),
+      m_axi_bvalid(2) => xbar_to_m02_couplers_BVALID,
+      m_axi_bvalid(1) => xbar_to_m01_couplers_BVALID,
       m_axi_bvalid(0) => xbar_to_m00_couplers_BVALID,
       m_axi_rdata(127 downto 96) => xbar_to_m03_couplers_RDATA(31 downto 0),
       m_axi_rdata(95 downto 64) => xbar_to_m02_couplers_RDATA(31 downto 0),
@@ -4479,16 +4479,16 @@ xbar: component dualBlaze_xbar_1
       m_axi_rresp(1) => xbar_to_m00_couplers_RRESP,
       m_axi_rresp(0) => xbar_to_m00_couplers_RRESP,
       m_axi_rvalid(3) => xbar_to_m03_couplers_RVALID,
-      m_axi_rvalid(2) => xbar_to_m02_couplers_RVALID(0),
-      m_axi_rvalid(1) => xbar_to_m01_couplers_RVALID(0),
+      m_axi_rvalid(2) => xbar_to_m02_couplers_RVALID,
+      m_axi_rvalid(1) => xbar_to_m01_couplers_RVALID,
       m_axi_rvalid(0) => xbar_to_m00_couplers_RVALID,
       m_axi_wdata(127 downto 96) => xbar_to_m03_couplers_WDATA(127 downto 96),
       m_axi_wdata(95 downto 64) => xbar_to_m02_couplers_WDATA(95 downto 64),
       m_axi_wdata(63 downto 32) => xbar_to_m01_couplers_WDATA(63 downto 32),
       m_axi_wdata(31 downto 0) => xbar_to_m00_couplers_WDATA(31 downto 0),
       m_axi_wready(3) => xbar_to_m03_couplers_WREADY,
-      m_axi_wready(2) => xbar_to_m02_couplers_WREADY(0),
-      m_axi_wready(1) => xbar_to_m01_couplers_WREADY(0),
+      m_axi_wready(2) => xbar_to_m02_couplers_WREADY,
+      m_axi_wready(1) => xbar_to_m01_couplers_WREADY,
       m_axi_wready(0) => xbar_to_m00_couplers_WREADY,
       m_axi_wstrb(15 downto 12) => xbar_to_m03_couplers_WSTRB(15 downto 12),
       m_axi_wstrb(11 downto 8) => xbar_to_m02_couplers_WSTRB(11 downto 8),
@@ -4964,73 +4964,6 @@ architecture STRUCTURE of dualBlaze is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component dualBlaze_rst_clk_wiz_0_50M_0;
-  component dualBlaze_PmodNAV_0_0 is
-  port (
-    AXI_LITE_GPIO_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    AXI_LITE_GPIO_arready : out STD_LOGIC;
-    AXI_LITE_GPIO_arvalid : in STD_LOGIC;
-    AXI_LITE_GPIO_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    AXI_LITE_GPIO_awready : out STD_LOGIC;
-    AXI_LITE_GPIO_awvalid : in STD_LOGIC;
-    AXI_LITE_GPIO_bready : in STD_LOGIC;
-    AXI_LITE_GPIO_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_GPIO_bvalid : out STD_LOGIC;
-    AXI_LITE_GPIO_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_GPIO_rready : in STD_LOGIC;
-    AXI_LITE_GPIO_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_GPIO_rvalid : out STD_LOGIC;
-    AXI_LITE_GPIO_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_GPIO_wready : out STD_LOGIC;
-    AXI_LITE_GPIO_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    AXI_LITE_GPIO_wvalid : in STD_LOGIC;
-    AXI_LITE_SPI_araddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    AXI_LITE_SPI_arready : out STD_LOGIC;
-    AXI_LITE_SPI_arvalid : in STD_LOGIC;
-    AXI_LITE_SPI_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    AXI_LITE_SPI_awready : out STD_LOGIC;
-    AXI_LITE_SPI_awvalid : in STD_LOGIC;
-    AXI_LITE_SPI_bready : in STD_LOGIC;
-    AXI_LITE_SPI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_SPI_bvalid : out STD_LOGIC;
-    AXI_LITE_SPI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_SPI_rready : in STD_LOGIC;
-    AXI_LITE_SPI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_SPI_rvalid : out STD_LOGIC;
-    AXI_LITE_SPI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_SPI_wready : out STD_LOGIC;
-    AXI_LITE_SPI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    AXI_LITE_SPI_wvalid : in STD_LOGIC;
-    GPIO_Interrupt : out STD_LOGIC;
-    Pmod_out_pin10_i : in STD_LOGIC;
-    Pmod_out_pin10_o : out STD_LOGIC;
-    Pmod_out_pin10_t : out STD_LOGIC;
-    Pmod_out_pin1_i : in STD_LOGIC;
-    Pmod_out_pin1_o : out STD_LOGIC;
-    Pmod_out_pin1_t : out STD_LOGIC;
-    Pmod_out_pin2_i : in STD_LOGIC;
-    Pmod_out_pin2_o : out STD_LOGIC;
-    Pmod_out_pin2_t : out STD_LOGIC;
-    Pmod_out_pin3_i : in STD_LOGIC;
-    Pmod_out_pin3_o : out STD_LOGIC;
-    Pmod_out_pin3_t : out STD_LOGIC;
-    Pmod_out_pin4_i : in STD_LOGIC;
-    Pmod_out_pin4_o : out STD_LOGIC;
-    Pmod_out_pin4_t : out STD_LOGIC;
-    Pmod_out_pin7_i : in STD_LOGIC;
-    Pmod_out_pin7_o : out STD_LOGIC;
-    Pmod_out_pin7_t : out STD_LOGIC;
-    Pmod_out_pin8_i : in STD_LOGIC;
-    Pmod_out_pin8_o : out STD_LOGIC;
-    Pmod_out_pin8_t : out STD_LOGIC;
-    Pmod_out_pin9_i : in STD_LOGIC;
-    Pmod_out_pin9_o : out STD_LOGIC;
-    Pmod_out_pin9_t : out STD_LOGIC;
-    SPI_Interrupt : out STD_LOGIC;
-    ext_spi_clk : in STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC
-  );
-  end component dualBlaze_PmodNAV_0_0;
   component dualBlaze_axi_bram_ctrl_0_0 is
   port (
     s_axi_aclk : in STD_LOGIC;
@@ -5139,6 +5072,73 @@ architecture STRUCTURE of dualBlaze is
     bram_rddata_a : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component dualBlaze_axi_bram_ctrl_1_0;
+  component dualBlaze_PmodNAV_0_0 is
+  port (
+    AXI_LITE_GPIO_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    AXI_LITE_GPIO_arready : out STD_LOGIC;
+    AXI_LITE_GPIO_arvalid : in STD_LOGIC;
+    AXI_LITE_GPIO_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    AXI_LITE_GPIO_awready : out STD_LOGIC;
+    AXI_LITE_GPIO_awvalid : in STD_LOGIC;
+    AXI_LITE_GPIO_bready : in STD_LOGIC;
+    AXI_LITE_GPIO_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI_LITE_GPIO_bvalid : out STD_LOGIC;
+    AXI_LITE_GPIO_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI_LITE_GPIO_rready : in STD_LOGIC;
+    AXI_LITE_GPIO_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI_LITE_GPIO_rvalid : out STD_LOGIC;
+    AXI_LITE_GPIO_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI_LITE_GPIO_wready : out STD_LOGIC;
+    AXI_LITE_GPIO_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI_LITE_GPIO_wvalid : in STD_LOGIC;
+    AXI_LITE_SPI_araddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    AXI_LITE_SPI_arready : out STD_LOGIC;
+    AXI_LITE_SPI_arvalid : in STD_LOGIC;
+    AXI_LITE_SPI_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    AXI_LITE_SPI_awready : out STD_LOGIC;
+    AXI_LITE_SPI_awvalid : in STD_LOGIC;
+    AXI_LITE_SPI_bready : in STD_LOGIC;
+    AXI_LITE_SPI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI_LITE_SPI_bvalid : out STD_LOGIC;
+    AXI_LITE_SPI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI_LITE_SPI_rready : in STD_LOGIC;
+    AXI_LITE_SPI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI_LITE_SPI_rvalid : out STD_LOGIC;
+    AXI_LITE_SPI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI_LITE_SPI_wready : out STD_LOGIC;
+    AXI_LITE_SPI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI_LITE_SPI_wvalid : in STD_LOGIC;
+    GPIO_Interrupt : out STD_LOGIC;
+    Pmod_out_pin10_i : in STD_LOGIC;
+    Pmod_out_pin10_o : out STD_LOGIC;
+    Pmod_out_pin10_t : out STD_LOGIC;
+    Pmod_out_pin1_i : in STD_LOGIC;
+    Pmod_out_pin1_o : out STD_LOGIC;
+    Pmod_out_pin1_t : out STD_LOGIC;
+    Pmod_out_pin2_i : in STD_LOGIC;
+    Pmod_out_pin2_o : out STD_LOGIC;
+    Pmod_out_pin2_t : out STD_LOGIC;
+    Pmod_out_pin3_i : in STD_LOGIC;
+    Pmod_out_pin3_o : out STD_LOGIC;
+    Pmod_out_pin3_t : out STD_LOGIC;
+    Pmod_out_pin4_i : in STD_LOGIC;
+    Pmod_out_pin4_o : out STD_LOGIC;
+    Pmod_out_pin4_t : out STD_LOGIC;
+    Pmod_out_pin7_i : in STD_LOGIC;
+    Pmod_out_pin7_o : out STD_LOGIC;
+    Pmod_out_pin7_t : out STD_LOGIC;
+    Pmod_out_pin8_i : in STD_LOGIC;
+    Pmod_out_pin8_o : out STD_LOGIC;
+    Pmod_out_pin8_t : out STD_LOGIC;
+    Pmod_out_pin9_i : in STD_LOGIC;
+    Pmod_out_pin9_o : out STD_LOGIC;
+    Pmod_out_pin9_t : out STD_LOGIC;
+    SPI_Interrupt : out STD_LOGIC;
+    ext_spi_clk : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC
+  );
+  end component dualBlaze_PmodNAV_0_0;
   signal PmodNAV_0_Pmod_out_PIN10_I : STD_LOGIC;
   signal PmodNAV_0_Pmod_out_PIN10_O : STD_LOGIC;
   signal PmodNAV_0_Pmod_out_PIN10_T : STD_LOGIC;

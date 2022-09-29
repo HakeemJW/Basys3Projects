@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
 -- Date        : Thu Sep 29 01:06:54 2022
 -- Host        : DESKTOP-M3780A7 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_auto_pc_1/dualBlaze_auto_pc_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top dualBlaze_auto_pc_1 -prefix
+--               dualBlaze_auto_pc_1_ dualBlaze_auto_pc_1_stub.vhdl
 -- Design      : dualBlaze_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

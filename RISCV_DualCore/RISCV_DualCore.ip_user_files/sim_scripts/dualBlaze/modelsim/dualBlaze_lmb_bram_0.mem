@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+// Vivado v2022.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Created on Thursday September 29, 2022 - 08:43:54 am, from:
+//
+//     Map file     - c:\Users\Hakeem\Desktop\Basys3_Projects\RISCV_DualCore\RISCV_DualCore.gen\sources_1\bd\dualBlaze\dualBlaze.bmm
+//     Data file(s) - c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_0_0/data/mb_bootloop_le.elf, c:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_microblaze_1_0/data/mb_bootloop_le.elf
+//
+// Address space 'dualBlaze_i_microblaze_0.dualBlaze_i_microblaze_0_local_memory_lmb_bram_32K_2_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

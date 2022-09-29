@@ -1,0 +1,37 @@
+verilog xil_defaultlib --include "../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ipshared/4e49" --include "../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ipshared/ec67/hdl" --include "../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodOLEDrgb_0_0/drivers/PmodOLEDrgb_v1_0/src" --include "../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/drivers/PmodNAV_v1_0/src" \
+"../../../bd/dualBlaze/ip/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_clk_wiz_0_0/dualBlaze_clk_wiz_0_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_lmb_bram_0/sim/dualBlaze_lmb_bram_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_xbar_0/sim/dualBlaze_xbar_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_microblaze_0_xlconcat_0/sim/dualBlaze_microblaze_0_xlconcat_0.v" \
+"../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ip/dualBlaze_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/sim/PmodOLEDrgb_pmod_bridge_0_0.v" \
+"../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ipshared/d9e9/hdl/PmodOLEDrgb_v1_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodOLEDrgb_0_0/sim/dualBlaze_PmodOLEDrgb_0_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_lmb_bram_1/sim/dualBlaze_lmb_bram_1.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_pmod_bridge_0_0/sim/PmodNAV_pmod_bridge_0_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlconcat_0_0/sim/PmodNAV_xlconcat_0_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlconcat_0_1/sim/PmodNAV_xlconcat_0_1.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlconcat_0_2/sim/PmodNAV_xlconcat_0_2.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlconcat_0_3/sim/PmodNAV_xlconcat_0_3.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_0/sim/PmodNAV_xlslice_0_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_3/sim/PmodNAV_xlslice_0_3.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_4/sim/PmodNAV_xlslice_0_4.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_5/sim/PmodNAV_xlslice_0_5.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_6/sim/PmodNAV_xlslice_0_6.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_8/sim/PmodNAV_xlslice_0_8.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_0_9/sim/PmodNAV_xlslice_0_9.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_8_0/sim/PmodNAV_xlslice_8_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_8_1/sim/PmodNAV_xlslice_8_1.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlslice_8_2/sim/PmodNAV_xlslice_8_2.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/src/PmodNAV_xlconcat_0_4/sim/PmodNAV_xlconcat_0_4.v" \
+"../../../../RISCV_DualCore.gen/sources_1/bd/dualBlaze/ipshared/0479/src/PmodNAV.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_PmodNAV_0_0/sim/dualBlaze_PmodNAV_0_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_xbar_1/sim/dualBlaze_xbar_1.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_axi_bram_ctrl_0_bram_1/sim/dualBlaze_axi_bram_ctrl_0_bram_1.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_auto_pc_0/sim/dualBlaze_auto_pc_0.v" \
+"../../../bd/dualBlaze/ip/dualBlaze_auto_pc_1/sim/dualBlaze_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

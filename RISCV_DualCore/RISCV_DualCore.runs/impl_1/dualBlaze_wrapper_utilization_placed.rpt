@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Sep 29 01:10:08 2022
+| Date         : Thu Sep 29 08:50:31 2022
 | Host         : DESKTOP-M3780A7 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file dualBlaze_wrapper_utilization_placed.rpt -pb dualBlaze_wrapper_utilization_placed.pb
 | Design       : dualBlaze_wrapper

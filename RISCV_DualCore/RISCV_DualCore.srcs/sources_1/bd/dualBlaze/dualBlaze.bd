@@ -46,7 +46,6 @@
         "lmb_bram": ""
       },
       "rst_clk_wiz_0_50M": "",
-      "PmodNAV_0": "",
       "microblaze_1_axi_periph": {
         "xbar": "",
         "s00_couplers": {},
@@ -59,7 +58,8 @@
       },
       "axi_bram_ctrl_0": "",
       "axi_bram_ctrl_0_bram": "",
-      "axi_bram_ctrl_1": ""
+      "axi_bram_ctrl_1": "",
+      "PmodNAV_0": ""
     },
     "interface_ports": {
       "jb": {
@@ -1424,32 +1424,6 @@
         "xci_path": "ip\\dualBlaze_rst_clk_wiz_0_50M_0\\dualBlaze_rst_clk_wiz_0_50M_0.xci",
         "inst_hier_path": "rst_clk_wiz_0_50M"
       },
-      "PmodNAV_0": {
-        "vlnv": "digilentinc.com:IP:PmodNAV:1.0",
-        "xci_name": "dualBlaze_PmodNAV_0_0",
-        "xci_path": "ip\\dualBlaze_PmodNAV_0_0\\dualBlaze_PmodNAV_0_0.xci",
-        "inst_hier_path": "PmodNAV_0",
-        "parameters": {
-          "PMOD": {
-            "value": "jc"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        },
-        "interface_ports": {
-          "AXI_LITE_SPI": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Slave",
-            "memory_map_ref": "AXI_LITE_SPI"
-          },
-          "AXI_LITE_GPIO": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Slave",
-            "memory_map_ref": "AXI_LITE_GPIO"
-          }
-        }
-      },
       "microblaze_1_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip\\dualBlaze_microblaze_1_axi_periph_0\\dualBlaze_microblaze_1_axi_periph_0.xci",
@@ -2102,6 +2076,32 @@
             "value_src": "default"
           }
         }
+      },
+      "PmodNAV_0": {
+        "vlnv": "digilentinc.com:IP:PmodNAV:1.0",
+        "xci_name": "dualBlaze_PmodNAV_0_0",
+        "xci_path": "ip\\dualBlaze_PmodNAV_0_0\\dualBlaze_PmodNAV_0_0.xci",
+        "inst_hier_path": "PmodNAV_0",
+        "parameters": {
+          "PMOD": {
+            "value": "jc"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        },
+        "interface_ports": {
+          "AXI_LITE_SPI": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "AXI_LITE_SPI"
+          },
+          "AXI_LITE_GPIO": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "AXI_LITE_GPIO"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2296,11 +2296,11 @@
           "microblaze_1_axi_periph/S00_ACLK",
           "microblaze_1_axi_periph/M00_ACLK",
           "microblaze_1_axi_periph/ACLK",
-          "PmodNAV_0/s_axi_aclk",
           "microblaze_1_axi_periph/M01_ACLK",
           "microblaze_1_axi_periph/M02_ACLK",
           "axi_bram_ctrl_1/s_axi_aclk",
-          "microblaze_1_axi_periph/M03_ACLK"
+          "microblaze_1_axi_periph/M03_ACLK",
+          "PmodNAV_0/s_axi_aclk"
         ]
       },
       "reset_1": {
@@ -2358,11 +2358,11 @@
           "microblaze_1_axi_periph/S00_ARESETN",
           "microblaze_1_axi_periph/M00_ARESETN",
           "microblaze_1_axi_periph/ARESETN",
-          "PmodNAV_0/s_axi_aresetn",
           "microblaze_1_axi_periph/M01_ARESETN",
           "microblaze_1_axi_periph/M02_ARESETN",
           "axi_bram_ctrl_1/s_axi_aresetn",
-          "microblaze_1_axi_periph/M03_ARESETN"
+          "microblaze_1_axi_periph/M03_ARESETN",
+          "PmodNAV_0/s_axi_aresetn"
         ]
       },
       "sys_clock_1": {

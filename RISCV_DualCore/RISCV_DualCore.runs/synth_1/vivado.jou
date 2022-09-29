@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Sep 29 01:07:52 2022
-# Process ID: 41472
+# Start of session at: Thu Sep 29 08:48:19 2022
+# Process ID: 81624
 # Current directory: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1
 # Command line: vivado.exe -log dualBlaze_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dualBlaze_wrapper.tcl
 # Log file: C:/Users/Hakeem/Desktop/Basys3_Projects/RISCV_DualCore/RISCV_DualCore.runs/synth_1/dualBlaze_wrapper.vds
